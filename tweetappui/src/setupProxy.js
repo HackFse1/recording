@@ -18,7 +18,7 @@ module.exports = function (app) {
   app.use(
     createProxyMiddleware('/api2', {
       //target: 'http://localhost:8083', // API endpoint 2
-      target: 'http://recordingtweetservice-env.eba-39dxbbwp.ap-northeast-1.elasticbeanstalk.com/',
+      target: 'http://tweetapptweetservice1-env.eba-vgcuzmmb.ap-northeast-1.elasticbeanstalk.com/',
       //target: 'http://34.229.167.216:8083',
       changeOrigin: true,
       pathRewrite: {
