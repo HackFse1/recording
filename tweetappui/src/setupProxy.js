@@ -3,7 +3,8 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 module.exports = function (app) {
   app.use(
     createProxyMiddleware('/api1', {
-      target: 'http://recordinguserservice-env.eba-mrb2nnmb.ap-northeast-1.elasticbeanstalk.com/', // API endpoint 1
+      target: 'http://tweetappuserservice1-env.eba-b7kvjkfa.ap-northeast-1.elasticbeanstalk.com/', // API endpoint 1
+      //target: 'localhost:8082',
       //target: 'http://3.87.108.193:8082',
       changeOrigin: true,
       pathRewrite: {
